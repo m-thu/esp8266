@@ -1,3 +1,10 @@
+# Subproject binaries
+toggle
+
+# Editor backup files
+*.swp
+*~
+
 # Object files
 *.o
 *.ko
@@ -27,6 +34,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
 
 # Debug files
 *.dSYM/
