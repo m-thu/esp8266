@@ -17,7 +17,7 @@ CFLAGS=-I. -mlongcalls -Os -pedantic -Wall -Wextra
 LDLIBS=-nostdlib -Wl,--start-group -lmain -lnet80211 -lwpa -llwip -lpp -lphy -Wl,--end-group -lgcc
 LDFLAGS=-Teagle.app.v6.ld
 
-all: $(PROJECT)-0x00000.bin 
+all: $(PROJECT)-0x00000.bin
 
 $(PROJECT): $(OBJ)
 	$(CC) $(LDFLAGS) $(LDLIBS) -o $(PROJECT) $(OBJ)
