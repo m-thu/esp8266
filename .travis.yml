@@ -1,8 +1,29 @@
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - make
+      - unrar
+      - autoconf
+      - automake
+      - libtool
+      - gcc
+      - g++
+      - gperf
+      - flex
+      - bison
+      - texinfo
+      - gawk
+      - ncurses-dev
+      - libexpat-dev
+      - python
+      - python-serial
+      - sed
+
 language: c
 
 before_install:
-  - sudo apt-get update -qq >/dev/null
-  - sudo apt-get install -qq make unrar autoconf automake libtool gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python python-serial sed
   - cd ..; git clone --recursive https://github.com/pfalcon/esp-open-sdk.git; cd esp-open-sdk; make STANDALONE=y; cd ../esp8266
   - cd ..; git clone https://github.com/themadinventor/esptool.git; cd esp8266
 
