@@ -24,6 +24,8 @@ addons:
 language: c
 
 before_install:
+  - cd ..; wget https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz; tar xzf autoconf-2.69.tar.gz; cd autoconf-2.69; ./configure; make; cd ../esp8266
+  - export PATH=~/autoconf-2.69/bin:$PATH
   - cd ..; git clone --recursive https://github.com/pfalcon/esp-open-sdk.git; cd esp-open-sdk; make STANDALONE=y; cd ../esp8266
   - cd ..; git clone https://github.com/themadinventor/esptool.git; cd esp8266
 
