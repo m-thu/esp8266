@@ -23,8 +23,7 @@ addons:
 language: c
 
 before_script:
-  - cd ..; wget https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz; tar xzf autoconf-2.69.tar.gz; cd autoconf-2.69; ./configure --prefix=/home/travis/build/m-thu/; make; make install; cd ../esp8266
-  - cd ..; git clone --recursive https://github.com/pfalcon/esp-open-sdk.git; cd esp-open-sdk; export PATH=/home/travis/build/m-thu/bin:$PATH; make STANDALONE=y; cd ../esp8266
+  - cd ..; wget 'https://github.com/m-thu/esp8266/blob/master/esp-open-sdk.tar.bz2?raw=true'; tar xjf esp-open-sdk.tar.bz2; cd ../esp8266
   - cd ..; git clone https://github.com/themadinventor/esptool.git; cd esp8266
 
 script:
