@@ -23,7 +23,7 @@ addons:
 language: c
 
 before_script:
-  - cd ..; wget 'https://github.com/m-thu/esp8266/blob/master/esp-open-sdk.tar.bz2?raw=true' -O esp-open-sdk.tar.bz2; tar xjf esp-open-sdk.tar.bz2; cd ../esp8266
+  - cd ..; wget 'https://github.com/m-thu/esp8266/blob/master/esp-open-sdk.tar.bz2?raw=true' -O esp-open-sdk.tar.bz2; tar xjf esp-open-sdk.tar.bz2; cd esp8266
   - cd ..; git clone https://github.com/themadinventor/esptool.git; cd esp8266
 
 script:
