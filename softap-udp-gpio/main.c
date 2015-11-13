@@ -29,7 +29,7 @@ static struct softap_config softap_cfg = {
 	100        /* beacon_interval (ms) */
 };
 
-struct ip_info ip;
+static struct ip_info ip;
 static struct espconn udp_conn;
 static esp_udp udp;
 
