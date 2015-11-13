@@ -1,4 +1,4 @@
-PROJECTS=toggle
+PROJECTS=toggle softap-udp-gpio
 
 .PHONY: all clean $(PROJECTS)
 
