@@ -1,4 +1,4 @@
-PROJECTS=toggle softap-udp-gpio
+PROJECTS=toggle softap-udp-gpio esp-gdbstub-test
 
 .PHONY: all clean $(PROJECTS)
 
